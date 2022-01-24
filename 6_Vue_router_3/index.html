@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"/>
+
+    <title>Route</title>
+</head>
+<body>
+    <h1>Saludando...</h1>
+
+    <div id="app">
+        <input v-model="name"></input>
+        <button v-on:click="SayHello">Say Hello</button>
+        <button v-on:click="SayBye">Say Bye</button>
+
+        <router-view></router-view>
+  </div>
+
+    <script src="js/components/bye.js"></script>
+    <script src="js/components/hello.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

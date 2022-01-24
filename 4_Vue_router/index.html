@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>  
+    <!-- Agregras links de cdn de css -->
+    <title>Route</title>
+</head>
+<body>
+    <h1>Demo APP</h1>
+
+    <div id="app">
+        <div class="row">
+            <div class="col-3">
+                <router-link to="/home"> Principal </router-link>
+                <router-link to="/contact"> Contactanos </router-link>
+                <router-link to="/who"> Quienes somos </router-link>
+            </div>
+            <div class="col-9">
+                <router-view>
+
+                </router-view>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/components/who.js"></script>
+    <script src="js/components/contact.js"></script>
+    <script src="js/components/home.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
